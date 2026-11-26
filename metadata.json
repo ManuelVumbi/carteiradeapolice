@@ -1,0 +1,8 @@
+{
+  "name": "Apólice 27279 · Resumo Saúde Grupo & Exportador Excel",
+  "description": "Painel interativo e gerador de ficheiro Excel estruturado para a Apólice N.º 27279 (Saúde Grupo - Plano 2) da Aliança Seguros.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

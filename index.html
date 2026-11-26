@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carteira de Apólices Espacie · Gestão &amp; Exportador Excel</title>
+    <meta
+      name="description"
+      content="Painel interativo multi-apólices com gestão completa (adicionar, atualizar, eliminar) e exportação Excel (.xlsx) estruturada."
+    />
+    <meta property="og:title" content="Carteira de Apólices Espacie · Gestão &amp; Exportador Excel" />
+    <meta
+      property="og:description"
+      content="Resumo organizado, moderno e interativo das apólices de saúde com gestão dinâmica e exportação para Excel (.xlsx)."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('espacie_apolices_theme');
+          var dark = saved === 'dark' || (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F5F7FB] dark:bg-[#0B1120] text-slate-900 dark:text-slate-100 antialiased selection:bg-cyan-100 selection:text-cyan-950 dark:selection:bg-cyan-900/60 dark:selection:text-cyan-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
